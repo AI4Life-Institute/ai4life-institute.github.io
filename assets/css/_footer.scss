@@ -1,37 +1,102 @@
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid $light-gray;
-  background-color: $light-gray;
-  padding: 40px 0;
+.site-footer {
+  background-color: $background-light;
+  color: $text-light;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
 }
 
-.footer {
-  text-align: center;
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
 
-  p {
-    margin: 10px 0;
-    color: $secondary-color;
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.footer-info {
+  h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
   }
 
-  a {
-    color: $primary-color;
-    text-decoration: none;
+  p {
+    color: $text-muted;
+    margin-bottom: 1.5rem;
+  }
+}
 
-    &:hover {
-      text-decoration: underline;
+.footer-nav {
+  h4 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $text-muted;
+      text-decoration: none;
+      transition: color $transition-speed $transition-timing;
+
+      &:hover {
+        color: $text-white;
+      }
     }
   }
 }
 
-.svg-icon {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  margin: 0 5px;
-  fill: $secondary-color;
-  transition: fill $transition-speed;
+.footer-newsletter {
+  h4 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+  }
+}
 
-  &:hover {
-    fill: $primary-color;
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba($text-white, 0.1);
+    color: $text-white;
+    transition: all $transition-speed $transition-timing;
+
+    &:hover {
+      background-color: $primary-color;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid $border-color;
+
+  p {
+    color: $text-muted;
+    margin: 0;
   }
 }
