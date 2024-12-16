@@ -1,0 +1,14 @@
+<div class="services-grid">
+  {% for service in site.data.services %}
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="{{ service.icon }}"></i>
+    </div>
+    <h3>{{ service.title }}</h3>
+    <p>{{ service.description }}</p>
+    {% if service.link %}
+    <a href="{{ service.link }}" class="button">Learn More</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

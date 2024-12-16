@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007BFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- AI Symbol -->
+  <g fill="url(#logoGradient)">
+    <path d="M20,35 L30,15 L40,35 H35 L32,29 H28 L25,35 H20 Z M30,20 L28,25 H32 L30,20 Z" />
+    <path d="M45,35 V15 H50 V35 H45 Z" />
+  </g>
+  <!-- 4Life Text -->
+  <text x="55" y="35" fill="#007BFF" font-family="Arial, sans-serif" font-size="20">4Life</text>
+  <!-- Institute Text -->
+  <text x="120" y="35" fill="#007BFF" font-family="Arial, sans-serif" font-size="14">Institute</text>
+</svg>

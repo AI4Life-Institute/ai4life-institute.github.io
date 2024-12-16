@@ -1,0 +1,19 @@
+- title: AI Consulting
+  icon: fas fa-brain
+  description: Expert guidance on implementing AI solutions for your organization
+  link: /services#consulting
+
+- title: AI Education
+  icon: fas fa-graduation-cap
+  description: Comprehensive training programs for AI literacy and development
+  link: /services#education
+
+- title: Research Collaboration
+  icon: fas fa-microscope
+  description: Partner with us on cutting-edge AI research projects
+  link: /services#research
+
+- title: Technology Assessment
+  icon: fas fa-chart-line
+  description: Evaluate and optimize your AI implementation strategy
+  link: /services#assessment

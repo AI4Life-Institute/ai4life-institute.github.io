@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>AI4Life Institute</h3>
+        <p>Empowering Innovation Through AI</p>
+        {% include social-links.html %}
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/mission">Mission</a></li>
+          <li><a href="/vision">Vision</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/programs">Programs</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        {% include newsletter-signup.html %}
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} AI4Life Institute. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

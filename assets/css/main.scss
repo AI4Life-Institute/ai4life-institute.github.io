@@ -1,0 +1,21 @@
+---
+---
+
+@charset "utf-8";
+
+// Import variables first
+@import "variables";
+
+// Reset and base styles
+@import "reset";
+@import "style";
+
+// Layout components
+@import "header";
+@import "footer";
+@import "contact";
+@import "blog";
+
+// Utilities and enhancements
+@import "svg-icons";
+@import "highlights";
