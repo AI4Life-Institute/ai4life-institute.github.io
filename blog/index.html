@@ -1,17 +1,12 @@
 ---
-layout: page
+layout: blog
 title: Blog
+permalink: /blog/
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="meta">{{ post.date | date: "%B %d, %Y" }}</div>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="page-header">
+  <div class="container">
+    <h1>AI4Life Institute Blog</h1>
+    <p>Stay updated with the latest insights in AI technology, research, and applications.</p>
+  </div>
 </div>

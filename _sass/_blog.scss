@@ -1,0 +1,89 @@
+// Blog container styles
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+// Blog grid layout
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+// Blog card styling
+.blog-card {
+  background: $background-light;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+
+    a {
+      color: $text-white;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// Post meta information
+.post-meta {
+  color: $text-light;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+// Post excerpt
+.post-excerpt {
+  color: $text-light;
+  line-height: 1.6;
+}
+
+// Page header styles
+.page-header {
+  background-color: $background-dark;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  h1 {
+    color: $text-white;
+    margin: 0 0 1rem;
+  }
+
+  p {
+    color: $text-light;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: $tablet) {
+  .blog-container {
+    padding: 1rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .page-header {
+    padding: 3rem 1rem;
+  }
+}
