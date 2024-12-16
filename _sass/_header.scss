@@ -1,0 +1,139 @@
+.site-header {
+  background-color: $background-dark;
+  border-bottom: 1px solid $border-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: background-color $transition-speed $transition-timing;
+
+  &.scrolled {
+    background-color: rgba($background-dark, 0.95);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 2rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: $text-light;
+      text-decoration: none;
+      font-weight: $font-weight-medium;
+      transition: color $transition-speed $transition-timing;
+
+      &:hover {
+        color: $text-white;
+      }
+
+      &.active {
+        color: $primary-color;
+      }
+
+      &.button {
+        padding: 0.75rem 1.5rem;
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $text-white;
+    margin: 5px 0;
+    transition: transform $transition-speed $transition-timing,
+                opacity $transition-speed $transition-timing;
+  }
+
+  &.is-active {
+    span {
+      &:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $background-dark;
+    padding: 1rem 0;
+    border-top: 1px solid $border-color;
+
+    &.is-active {
+      display: block !important;
+    }
+
+    li {
+      margin: 0 !important;
+    }
+
+    a {
+      display: block;
+      padding: 0.75rem $container-padding;
+
+      &.button {
+        margin: 0.5rem $container-padding;
+      }
+    }
+  }
+}
