@@ -65,16 +65,17 @@ $image-breakpoints: (
 
 // Responsive image mixins
 @mixin background-image-responsive($image-path) {
+  $path-parts: str-slice($image-path, 1, str-length($image-path) - 4);
+  $extension: str-slice($image-path, -4);
+
   background-image: url($image-path);
 
   @media (max-width: map-get($image-breakpoints, 'medium')) {
-    $medium-path: str-replace($image-path, '.jpg', '-medium.jpg');
-    background-image: url($medium-path);
+    background-image: url(#{$path-parts}-medium#{$extension});
   }
 
   @media (max-width: map-get($image-breakpoints, 'small')) {
-    $small-path: str-replace($image-path, '.jpg', '-small.jpg');
-    background-image: url($small-path);
+    background-image: url(#{$path-parts}-small#{$extension});
   }
 }
 
