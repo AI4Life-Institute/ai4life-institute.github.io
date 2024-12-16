@@ -1,47 +1,48 @@
 ---
 layout: page
 title: Contact Us
+permalink: /contact/
 ---
 
-# Get in Touch
+<div class="contact-page">
+  <h1>Get in Touch</h1>
 
-We'd love to hear from you! Reach out to discuss how we can help with your AI initiatives.
+  <p>We'd love to hear from you! Reach out to discuss how we can help with your AI initiatives.</p>
 
-## Contact Information
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> <a href="mailto:info@ai4lifeinstitute.com">info@ai4lifeinstitute.com</a></p>
+    <p><strong>Location:</strong> Washington State, USA</p>
+  </section>
 
-**Email**: [info@ai4lifeinstitute.com](mailto:info@ai4lifeinstitute.com)
+  <section class="social-connect">
+    <h2>Connect With Us</h2>
+    <p>Follow us on social media to stay updated with our latest news and developments:</p>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/company/ai4life-institute">LinkedIn</a></li>
+      <li><a href="https://twitter.com/ai4life_inst">Twitter</a></li>
+      <li><a href="https://www.facebook.com/ai4lifeinstitute">Facebook</a></li>
+    </ul>
+  </section>
 
-**Location**: Washington State, USA
+  <section class="contact-form-section">
+    <h2>Quick Contact</h2>
+    <p>For general inquiries or partnership opportunities, please fill out the form below or email us at <a href="mailto:info@ai4lifeinstitute.com">info@ai4lifeinstitute.com</a>.</p>
 
-## Connect With Us
+    <form name="contact" class="contact-form">
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+      </div>
 
-Follow us on social media to stay updated with our latest news and developments:
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="How can we help you?" rows="5"></textarea>
+      </div>
 
-- LinkedIn
-- Twitter
-- Facebook
+      <button type="submit" class="button">Send Message</button>
+    </form>
 
-## Quick Contact
-
-For general inquiries or partnership opportunities, please fill out the form below or email us at [info@ai4lifeinstitute.com](mailto:info@ai4lifeinstitute.com).
-
-<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
-  <input type="hidden" name="form-name" value="contact" />
-  <p class="hidden">
-    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-  </p>
-
-  <div class="form-group">
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-  </div>
-
-  <div class="form-group">
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required placeholder="How can we help you?" rows="5"></textarea>
-  </div>
-
-  <button type="submit" class="button">Send Message</button>
-</form>
-
-<p class="response-time">We aim to respond to all inquiries within 24-48 hours.</p>
+    <p class="response-time">We aim to respond to all inquiries within 24-48 hours.</p>
+  </section>
+</div>

@@ -23,7 +23,6 @@ sass:
   sass_dir: _sass
   load_paths:
     - _sass
-    - assets/css
 
 # Plugins
 plugins:
@@ -38,3 +37,10 @@ exclude:
   - README.md
   - CNAME
   - vendor
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - node_modules
+  - package.json
+  - package-lock.json

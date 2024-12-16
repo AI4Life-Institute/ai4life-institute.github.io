@@ -1,14 +1,20 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset "utf-8";
 
+// Import variables first
 @import "variables";
+
+// Reset and base styles
 @import "reset";
 @import "style";
+
+// Layout components
 @import "header";
 @import "footer";
 @import "contact";
-@import "highlights";
+
+// Utilities and enhancements
 @import "svg-icons";
+@import "highlights";
