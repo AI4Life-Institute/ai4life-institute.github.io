@@ -1,14 +1,27 @@
-// Colors
+// Base Colors
+$white: #FFFFFF;
+$black: #000000;
+$gray-100: #F8F9FA;
+$gray-200: #E9ECEF;
+$gray-300: #DEE2E6;
+$gray-400: #CED4DA;
+$gray-500: #ADB5BD;
+$gray-600: #6C757D;
+$gray-700: #495057;
+$gray-800: #343A40;
+$gray-900: #212529;
+
+// Theme Colors
 $background-dark: #1A1A1A;
 $background-light: #2A2A2A;
 $primary-color: #007AFF;
 $primary-dark: darken($primary-color, 10%);
 $secondary-color: #6C757D;
-$text-white: #FFFFFF;
+$text-white: $white;
 $text-color: $text-white;
-$text-light: rgba(255, 255, 255, 0.9);
-$text-muted: rgba(255, 255, 255, 0.6);
-$border-color: rgba(255, 255, 255, 0.1);
+$text-light: rgba($white, 0.9);
+$text-muted: rgba($white, 0.6);
+$border-color: rgba($white, 0.1);
 
 // Typography
 $base-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -43,5 +56,5 @@ $button-gradient: linear-gradient(135deg, $primary-color, darken($primary-color,
 $overlay-gradient: linear-gradient(180deg, rgba($background-dark, 0.4), rgba($background-dark, 0.8));
 
 // Shadows
-$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-$hover-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 6px rgba($black, 0.1);
+$hover-shadow: 0 8px 15px rgba($black, 0.2);
