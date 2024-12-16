@@ -5,6 +5,7 @@ $primary-color: #007AFF;
 $primary-dark: darken($primary-color, 10%);
 $secondary-color: #6C757D;
 $text-white: #FFFFFF;
+$text-color: $text-white;
 $text-light: rgba(255, 255, 255, 0.9);
 $text-muted: rgba(255, 255, 255, 0.6);
 $border-color: rgba(255, 255, 255, 0.1);
