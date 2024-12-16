@@ -90,7 +90,7 @@ a {
 
 // Section backgrounds
 .hero-section {
-  @include background-image-responsive('../assets/images/hero/hero-bg.jpg');
+  @include background-image-responsive('/assets/images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -117,7 +117,7 @@ a {
 }
 
 .focus-section {
-  @include background-image-responsive('../assets/images/backgrounds/focus-bg.jpg');
+  @include background-image-responsive('/assets/images/backgrounds/focus-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -126,7 +126,7 @@ a {
 }
 
 .services-section {
-  @include background-image-responsive('../assets/images/backgrounds/services-bg.jpg');
+  @include background-image-responsive('/assets/images/backgrounds/services-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -135,7 +135,7 @@ a {
 }
 
 .video-section {
-  @include background-image-responsive('../assets/images/backgrounds/video-bg.jpg');
+  @include background-image-responsive('/assets/images/backgrounds/video-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -144,24 +144,6 @@ a {
 }
 
 // Responsive utilities
-@media (max-width: $tablet) {
-  .hero-section {
-    background-image: url('../assets/images/hero/hero-bg-medium.jpg');
-  }
-
-  .focus-section {
-    background-image: url('../assets/images/backgrounds/focus-bg-medium.jpg');
-  }
-
-  .services-section {
-    background-image: url('../assets/images/backgrounds/services-bg-medium.jpg');
-  }
-
-  .video-section {
-    background-image: url('../assets/images/backgrounds/video-bg-medium.jpg');
-  }
-}
-
 @media (max-width: $mobile) {
   html {
     font-size: 14px;
@@ -185,25 +167,5 @@ a {
 
   h3 {
     font-size: 1.5rem;
-  }
-
-  .hero-section {
-    background-image: url('../assets/images/hero/hero-bg-small.jpg');
-    min-height: 60vh;
-  }
-
-  .focus-section {
-    background-image: url('../assets/images/backgrounds/focus-bg-small.jpg');
-    padding: $section-spacing 0;
-  }
-
-  .services-section {
-    background-image: url('../assets/images/backgrounds/services-bg-small.jpg');
-    padding: $section-spacing 0;
-  }
-
-  .video-section {
-    background-image: url('../assets/images/backgrounds/video-bg-small.jpg');
-    padding: $section-spacing 0;
   }
 }
