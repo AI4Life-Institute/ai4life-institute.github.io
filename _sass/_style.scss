@@ -90,7 +90,9 @@ a {
 
 // Section backgrounds
 .hero-section {
-  background: url('../assets/images/hero/hero-bg.jpg') no-repeat center center;
+  @include background-image-responsive('../assets/images/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: relative;
   min-height: 80vh;
@@ -115,21 +117,27 @@ a {
 }
 
 .focus-section {
-  background: url('../assets/images/backgrounds/focus-bg.jpg') no-repeat center center;
+  @include background-image-responsive('../assets/images/backgrounds/focus-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: relative;
   padding: $section-spacing * 2 0;
 }
 
 .services-section {
-  background: url('../assets/images/backgrounds/services-bg.jpg') no-repeat center center;
+  @include background-image-responsive('../assets/images/backgrounds/services-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: relative;
   padding: $section-spacing * 1.5 0;
 }
 
 .video-section {
-  background: url('../assets/images/backgrounds/video-bg.jpg') no-repeat center center;
+  @include background-image-responsive('../assets/images/backgrounds/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: relative;
   padding: $section-spacing * 1.5 0;

@@ -47,6 +47,37 @@ $tablet: 768px;
 $desktop: 992px;
 $large-desktop: 1200px;
 
+// Image breakpoints
+$image-breakpoints: (
+  'small': 768px,
+  'medium': 1024px,
+  'large': 1440px
+);
+
+// Image path functions
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+// Responsive image mixins
+@mixin background-image-responsive($image-path) {
+  background-image: url($image-path);
+
+  @media (max-width: map-get($image-breakpoints, 'medium')) {
+    $medium-path: str-replace($image-path, '.jpg', '-medium.jpg');
+    background-image: url($medium-path);
+  }
+
+  @media (max-width: map-get($image-breakpoints, 'small')) {
+    $small-path: str-replace($image-path, '.jpg', '-small.jpg');
+    background-image: url($small-path);
+  }
+}
+
 // Transitions
 $transition-speed: 0.3s;
 $transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
