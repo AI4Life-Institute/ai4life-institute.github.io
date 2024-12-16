@@ -1,5 +1,5 @@
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241216-13831-6spxxq.rb extconf.rb
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241216-52415-u63s1.rb extconf.rb
 creating Makefile
 
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
@@ -13,4 +13,4 @@ linking shared-object ruby_http_parser.so
 
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20241216-13831-5doocd
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20241216-52415-cjfjq9

@@ -1,5 +1,5 @@
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.11/ext/commonmarker
-/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241216-13831-levzul.rb extconf.rb
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241216-52415-wckylh.rb extconf.rb
 creating Makefile
 
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.11/ext/commonmarker
@@ -64,4 +64,4 @@ linking shared-object commonmarker/commonmarker.so
 
 current directory: /home/ubuntu/repos/ai4life-institute.github.io/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.11/ext/commonmarker
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20241216-13831-tayvh9/commonmarker
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20241216-52415-s9gwzo/commonmarker
