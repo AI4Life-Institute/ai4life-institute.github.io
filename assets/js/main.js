@@ -1,12 +1,20 @@
 // Navigation toggle for mobile
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded - Initializing mobile menu');
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
+    console.log('Menu Elements:', {
+        navToggle: navToggle ? 'Found' : 'Not Found',
+        navMenu: navMenu ? 'Found' : 'Not Found'
+    });
+
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
+            console.log('Menu Toggle Clicked');
             navMenu.classList.toggle('is-active');
             navToggle.classList.toggle('is-active');
+            console.log('Menu Active State:', navMenu.classList.contains('is-active'));
         });
     }
 

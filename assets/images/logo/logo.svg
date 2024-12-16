@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#fff" d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4m0 2c9.941 0 18 8.059 18 18s-8.059 18-18 18S6 33.941 6 24 14.059 6 24 6"/><path fill="#fff" d="M24 10c-7.732 0-14 6.268-14 14s6.268 14 14 14 14-6.268 14-14-6.268-14-14-14m0 2c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12"/><path fill="#fff" d="M24 16c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8m0 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6"/><path fill="#fff" d="M24 22a2 2 0 1 0-.001 3.999A2 2 0 0 0 24 22"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007BFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- AI Symbol -->
+  <g fill="url(#logoGradient)">
+    <path d="M20,35 L30,15 L40,35 H35 L32,29 H28 L25,35 H20 Z M30,20 L28,25 H32 L30,20 Z" />
+    <path d="M45,35 V15 H50 V35 H45 Z" />
+  </g>
+  <!-- 4Life Text -->
+  <text x="55" y="35" fill="#007BFF" font-family="Arial, sans-serif" font-size="20">4Life</text>
+  <!-- Institute Text -->
+  <text x="120" y="35" fill="#007BFF" font-family="Arial, sans-serif" font-size="14">Institute</text>
+</svg>
