@@ -1,3 +1,7 @@
+// Variables
+$header-height: 70px;
+$header-height-mobile: 60px;
+
 // Base styles
 html {
   font-size: $base-font-size;
@@ -47,6 +51,19 @@ p {
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 $container-padding;
+}
+
+// Main content padding for fixed header
+.main-content {
+  padding-top: calc(#{$header-height} + 2rem);
+  min-height: calc(100vh - #{$header-height});
+  width: 100%;
+  position: relative;
+
+  @media (max-width: $mobile) {
+    padding-top: calc(#{$header-height-mobile} + 1.5rem);
+    min-height: calc(100vh - #{$header-height-mobile});
+  }
 }
 
 // Sections
