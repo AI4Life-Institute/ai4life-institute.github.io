@@ -88,7 +88,72 @@ a {
   }
 }
 
+// Section backgrounds
+.hero-section {
+  background: url('../assets/images/hero/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.focus-section {
+  background: url('../assets/images/backgrounds/focus-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: $section-spacing * 2 0;
+}
+
+.services-section {
+  background: url('../assets/images/backgrounds/services-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: $section-spacing * 1.5 0;
+}
+
+.video-section {
+  background: url('../assets/images/backgrounds/video-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: $section-spacing * 1.5 0;
+}
+
 // Responsive utilities
+@media (max-width: $tablet) {
+  .hero-section {
+    background-image: url('../assets/images/hero/hero-bg-medium.jpg');
+  }
+
+  .focus-section {
+    background-image: url('../assets/images/backgrounds/focus-bg-medium.jpg');
+  }
+
+  .services-section {
+    background-image: url('../assets/images/backgrounds/services-bg-medium.jpg');
+  }
+
+  .video-section {
+    background-image: url('../assets/images/backgrounds/video-bg-medium.jpg');
+  }
+}
+
 @media (max-width: $mobile) {
   html {
     font-size: 14px;
@@ -112,5 +177,25 @@ a {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  .hero-section {
+    background-image: url('../assets/images/hero/hero-bg-small.jpg');
+    min-height: 60vh;
+  }
+
+  .focus-section {
+    background-image: url('../assets/images/backgrounds/focus-bg-small.jpg');
+    padding: $section-spacing 0;
+  }
+
+  .services-section {
+    background-image: url('../assets/images/backgrounds/services-bg-small.jpg');
+    padding: $section-spacing 0;
+  }
+
+  .video-section {
+    background-image: url('../assets/images/backgrounds/video-bg-small.jpg');
+    padding: $section-spacing 0;
   }
 }
