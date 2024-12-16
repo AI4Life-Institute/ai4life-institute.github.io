@@ -1,0 +1,88 @@
+.wrapper-masthead {
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto 15px;
+  }
+}
+
+.site-info {
+  flex: 1;
+
+  .site-name {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .site-description {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: $secondary-color;
+  }
+}
+
+nav {
+  margin-top: 10px;
+
+  a {
+    margin-left: 20px;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+
+    a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+}
